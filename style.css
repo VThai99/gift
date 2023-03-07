@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: radial-gradient(#333, #000);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section h2 {
+  font-size: 6em;
+  color: white;
+  text-transform: uppercase;
+}
+section .set {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+section .set div {
+  position: absolute;
+  display: block;
+}
+section .set div img {
+  height: 200px;
+  width: 200px;
+  object-fit: contain;
+}
+section .set div:nth-child(1) {
+  left: 20%;
+  animation: animate linear 15s infinite;
+  animation-delay: -7s;
+}
+section .set div:nth-child(2) {
+  left: 50%;
+  animation: animate linear 20s infinite;
+  animation-delay: -5s;
+}
+section .set div:nth-child(3) {
+  left: 70%;
+  animation: animate linear 15s infinite;
+  animation-delay: 0s;
+}
+section .set div:nth-child(4) {
+  left: 0%;
+  animation: animate linear 15s infinite;
+  animation-delay: -5s;
+}
+section .set div:nth-child(5) {
+  left: 85%;
+  animation: animate linear 18s infinite;
+  animation-delay: -10s;
+}
+section .set div:nth-child(6) {
+  left: 12%;
+  animation: animate linear 10s infinite;
+}
+section .set div:nth-child(7) {
+  left: 28%;
+  animation: animate linear 17s infinite;
+  animation-delay: 0s;
+}
+section .set div:nth-child(8) {
+  left: 62%;
+  animation: animate linear 10s infinite;
+  animation-delay: -15s;
+}
+section .set div:nth-child(9) {
+  left: 77%;
+  animation: animate linear 12s infinite;
+  animation-delay: -2s;
+}
+section .set div:nth-child(10) {
+  left: 55%;
+  animation: animate linear 15s infinite;
+  animation-delay: -5s;
+}
+section .set div:nth-child(11) {
+  left: 95%;
+  animation: animate linear 18s infinite;
+  animation-delay: -10s;
+}
+section .set div:nth-child(12) {
+  left: 45%;
+  animation: animate linear 12s infinite;
+  animation-delay: -12s;
+}
+@keyframes animate {
+  0% {
+    opacity: 0;
+    top: -10%;
+    transform: translateX(20px) rotate(0deg);
+  }
+  10% {
+    opacity: 1;
+  }
+  20% {
+    transform: translateX(-20px) rotate(45deg);
+  }
+  40% {
+    transform: translateX(-20px) rotate(90deg);
+  }
+  60% {
+    transform: translateX(20px) rotate(180deg);
+  }
+  80% {
+    transform: translateX(-20px) rotate(180deg);
+  }
+  100% {
+    top: 110%;
+    transform: translateX(-20px) rotate(225deg);
+    opacity: 0.5;
+  }
+}
+.set2 {
+  transform: scale(2) rotateY(180deg);
+  filter: blur(2px);
+}
+.set3 {
+  transform: scale(0.8) rotateX(180deg);
+  filter: blur(4px);
+}
+.section2 {
+  background: #000 !important;
+  height: 100vh !important;
+}
+.textface {
+  position: relative;
+  font-size: 1em;
+  letter-spacing: -0.05em;
+  line-height: 0.7em;
+  background: url(./images/face.jpg);
+  background-blend-mode: color-dodge;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: contain;
+  -webkit-background-clip: text;
+  color: transparent;
+}
