@@ -156,7 +156,7 @@ section .set div:nth-child(12) {
     align-items: center;
     font-size: 30px;
     font-family: "Permanent Marker", cursive;
-    letter-spacing: 9px;
+    letter-spacing: 5px;
     color: rgb(230, 68, 68);
     width: 100%;
     position: relative;
