@@ -147,6 +147,7 @@ section .set div:nth-child(12) {
   background-size: contain;
   -webkit-background-clip: text;
   color: transparent;
+  background-repeat: no-repeat;
 }
 
 .text_animation {
